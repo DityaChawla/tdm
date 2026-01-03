@@ -1,0 +1,77 @@
+{
+  "mode": "standard",
+  "device": "cpu",
+  "alpha": 0.01,
+  "config": {
+    "n_train": 600,
+    "n_cal": 2000,
+    "n_test": 400,
+    "epochs": 50
+  },
+  "stages": {
+    "generate_data": {
+      "time_s": 0.042749881744384766,
+      "train_samples": 1200,
+      "cal_samples": 2000,
+      "test_samples": 800,
+      "min_required_for_alpha": 1000
+    },
+    "load_model": {
+      "time_s": 2.7294280529022217
+    },
+    "train_probe": {
+      "time_s": 59.175431966781616,
+      "feature_dim": 768,
+      "accuracy": 0.9991666666666666
+    },
+    "calibrate": {
+      "time_s": 3414.490037202835,
+      "alpha": 0.01,
+      "thresholds": {
+        "probe": 0.009514986537396908,
+        "drift": 0.032062407135963436
+      }
+    },
+    "evaluate": {
+      "time_s": 1159.9294939041138,
+      "probe_auroc": 1.0,
+      "probe_tpr_at_fpr_0001": 1.0,
+      "probe_tpr_at_fpr_001": 1.0,
+      "probe_tpr_at_fpr_05": 1.0,
+      "fused_auroc": 1.0,
+      "fused_tpr_at_fpr_001": 1.0,
+      "fused_tpr_at_fpr_05": 1.0
+    },
+    "triggerspan": {
+      "time_s": 2.4724249839782715,
+      "baseline_risk": 1.0,
+      "n_spans": 0,
+      "top_span": null
+    },
+    "causal_validation": {
+      "time_s": 1.715437889099121,
+      "skipped": false,
+      "probe_score_before": 1.0,
+      "expected_score_after": 0.0,
+      "dot_before": 5.352603435516357,
+      "risk_before": 1.0,
+      "risk_after": 0.0,
+      "risk_drop": 1.0,
+      "causal_confirmed": true,
+      "patching_layer": 11,
+      "output_risk_before": 0.004623234272003174,
+      "output_risk_after": 0.004623234272003174,
+      "output_risk_drop": 0.0
+    }
+  },
+  "sanity_checks": {
+    "calibration_sufficient": true,
+    "fusion_helps": true,
+    "triggerspan_meaningful": false,
+    "patching_math_correct": true,
+    "causal_meaningful": true
+  },
+  "total_time_s": 4640.5550038814545,
+  "success": false,
+  "timestamp": "2026-01-02T18:01:31.621266"
+}
