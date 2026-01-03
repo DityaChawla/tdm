@@ -337,11 +337,11 @@ If you use TDM in your research, please cite:
 
 ```bibtex
 @misc{tdm2025,
-  author = {Your Name},
+  author = Ditya Chawla,
   title = {TDM: Triangulated Defection Monitor for Sleeper Agent Detection in LLMs},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/tdm}
+  url = {https://github.com/DityaChawla/tdm}
 }
 ```
 
